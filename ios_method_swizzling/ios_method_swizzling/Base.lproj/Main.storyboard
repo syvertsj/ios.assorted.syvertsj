@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_method_swizzling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Above StackView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXW-i1-oLN">
+                                <rect key="frame" x="79" y="83" width="257" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="aZj-Gs-13R" userLabel="StackView">
+                                <rect key="frame" x="124" y="141" width="154" height="231.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label In StackView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggw-yv-4yV">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5M-Kf-jcc">
+                                        <rect key="frame" x="0.0" y="94.5" width="154" height="30"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button In StackView">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDT-Mq-5mn">
+                                        <rect key="frame" x="0.0" y="197.5" width="154" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Above TextView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stX-dS-jM4">
+                                <rect key="frame" x="95" y="401" width="241" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16M-UN-51C">
+                                <rect key="frame" x="79" y="438" width="257" height="184"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5WI-mZ-MUl" userLabel="Switch Below TextView">
+                                <rect key="frame" x="183" y="640" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aZj-Gs-13R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-191.25" id="12C-nj-zc4"/>
+                            <constraint firstItem="16M-UN-51C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="82" id="4aI-tj-KQ8"/>
+                            <constraint firstItem="aZj-Gs-13R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="4c4-vV-96c"/>
+                            <constraint firstItem="aZj-Gs-13R" firstAttribute="centerX" secondItem="OXW-i1-oLN" secondAttribute="centerX" constant="-6.5" id="7SC-UG-ebr"/>
+                            <constraint firstItem="aZj-Gs-13R" firstAttribute="trailing" secondItem="OXW-i1-oLN" secondAttribute="trailing" constant="-58" id="8aJ-di-fpm"/>
+                            <constraint firstItem="stX-dS-jM4" firstAttribute="leading" secondItem="OXW-i1-oLN" secondAttribute="leading" constant="16" id="8hj-xs-Dek"/>
+                            <constraint firstItem="16M-UN-51C" firstAttribute="leading" secondItem="OXW-i1-oLN" secondAttribute="leading" id="9aM-0M-kWw"/>
+                            <constraint firstItem="OXW-i1-oLN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cka-8Y-bgt"/>
+                            <constraint firstItem="aZj-Gs-13R" firstAttribute="leading" secondItem="OXW-i1-oLN" secondAttribute="leading" constant="45" id="EMW-Ua-n3x"/>
+                            <constraint firstItem="stX-dS-jM4" firstAttribute="trailing" secondItem="OXW-i1-oLN" secondAttribute="trailing" id="FLK-QA-zSS"/>
+                            <constraint firstItem="aZj-Gs-13R" firstAttribute="top" secondItem="OXW-i1-oLN" secondAttribute="top" constant="58" id="Gwy-Ot-xSg"/>
+                            <constraint firstItem="OXW-i1-oLN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-346" id="IaV-MK-All"/>
+                            <constraint firstItem="stX-dS-jM4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35" id="Rhh-yr-JwV"/>
+                            <constraint firstItem="aZj-Gs-13R" firstAttribute="bottom" secondItem="OXW-i1-oLN" secondAttribute="bottom" constant="251.5" id="SVI-Ta-0as"/>
+                            <constraint firstItem="stX-dS-jM4" firstAttribute="centerY" secondItem="OXW-i1-oLN" secondAttribute="centerY" constant="311" id="Unt-7b-KSY"/>
+                            <constraint firstItem="16M-UN-51C" firstAttribute="top" secondItem="OXW-i1-oLN" secondAttribute="top" constant="355" id="VvE-ku-bA3"/>
+                            <constraint firstItem="aZj-Gs-13R" firstAttribute="centerY" secondItem="OXW-i1-oLN" secondAttribute="centerY" constant="154.75" id="WYe-YK-9wl"/>
+                            <constraint firstItem="5WI-mZ-MUl" firstAttribute="trailing" secondItem="OXW-i1-oLN" secondAttribute="trailing" constant="-104" id="WeG-w0-fk7"/>
+                            <constraint firstItem="stX-dS-jM4" firstAttribute="centerX" secondItem="OXW-i1-oLN" secondAttribute="centerX" constant="8" id="XG2-Ms-xtS"/>
+                            <constraint firstItem="5WI-mZ-MUl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="207.5" id="Xdw-a9-7Ph"/>
+                            <constraint firstItem="5WI-mZ-MUl" firstAttribute="centerY" secondItem="OXW-i1-oLN" secondAttribute="centerY" constant="553.5" id="YHd-S2-NUa"/>
+                            <constraint firstItem="5WI-mZ-MUl" firstAttribute="top" secondItem="OXW-i1-oLN" secondAttribute="top" constant="557" id="ZJe-g1-WYF"/>
+                            <constraint firstItem="16M-UN-51C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cEB-0u-NyN"/>
+                            <constraint firstItem="16M-UN-51C" firstAttribute="centerY" secondItem="OXW-i1-oLN" secondAttribute="centerY" constant="428" id="eE4-KC-Kbt"/>
+                            <constraint firstItem="5WI-mZ-MUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eTP-Uo-wxu"/>
+                            <constraint firstItem="5WI-mZ-MUl" firstAttribute="bottom" secondItem="OXW-i1-oLN" secondAttribute="bottom" constant="550" id="fKx-ft-9Kv"/>
+                            <constraint firstItem="16M-UN-51C" firstAttribute="bottom" secondItem="OXW-i1-oLN" secondAttribute="bottom" constant="501" id="g7u-Y1-J1k"/>
+                            <constraint firstItem="16M-UN-51C" firstAttribute="trailing" secondItem="OXW-i1-oLN" secondAttribute="trailing" id="gDj-Qe-91h"/>
+                            <constraint firstItem="stX-dS-jM4" firstAttribute="bottom" secondItem="OXW-i1-oLN" secondAttribute="bottom" constant="304" id="hae-4b-NlS"/>
+                            <constraint firstItem="16M-UN-51C" firstAttribute="centerX" secondItem="OXW-i1-oLN" secondAttribute="centerX" id="jPw-3p-Dnp"/>
+                            <constraint firstItem="stX-dS-jM4" firstAttribute="top" secondItem="OXW-i1-oLN" secondAttribute="top" constant="318" id="oPc-Cu-43I"/>
+                            <constraint firstItem="5WI-mZ-MUl" firstAttribute="centerX" secondItem="OXW-i1-oLN" secondAttribute="centerX" id="wmu-zU-xLz"/>
+                            <constraint firstItem="5WI-mZ-MUl" firstAttribute="leading" secondItem="OXW-i1-oLN" secondAttribute="leading" constant="104" id="x5T-lG-3kL"/>
+                            <constraint firstItem="stX-dS-jM4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8.5" id="xnd-j6-yQi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
