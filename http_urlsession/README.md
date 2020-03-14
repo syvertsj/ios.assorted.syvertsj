@@ -1,4 +1,4 @@
-# iOS: Http Request And JSON Response Handling Using Alamofire And ObjectMapper
+# iOS: Http Request And JSON Response Handling Using URLSession And JSONDecoder
 
 syvertsj
 
