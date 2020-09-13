@@ -81,12 +81,10 @@ class GameScene: SKScene {
         
         gameState = .notRunning
         
-        if score > highScore {
+        if score > UserDefaults.standard.integer(forKey: "highScore") {
             highScore = score
             updateHighScoreLabelText()
-            if highScore > UserDefaults.standard.integer(forKey: "highScore") {
-                UserDefaults.standard.set(highScore, forKey: "highScore")
-            }
+            UserDefaults.standard.set(highScore, forKey: "highScore")
         }
         
         // show "Game Over!" menu overlay
