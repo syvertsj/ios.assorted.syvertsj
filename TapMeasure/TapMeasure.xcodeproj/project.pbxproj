@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0349A72535274D006F227A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0349A62535274D006F227A /* Assets.xcassets */; };
 		BCA369B52530E8E8000A5C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA369B42530E8E8000A5C9E /* AppDelegate.swift */; };
 		BCA369B72530E8E9000A5C9E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA369B62530E8E9000A5C9E /* art.scnassets */; };
 		BCA369B92530E8E9000A5C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA369B82530E8E9000A5C9E /* ViewController.swift */; };
 		BCA369BC2530E8E9000A5C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA369BA2530E8E9000A5C9E /* Main.storyboard */; };
-		BCA369BE2530E8EC000A5C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA369BD2530E8EC000A5C9E /* Assets.xcassets */; };
 		BCA369C12530E8EC000A5C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA369BF2530E8EC000A5C9E /* LaunchScreen.storyboard */; };
 		BCA369CC2530E8EC000A5C9E /* TapMeasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA369CB2530E8EC000A5C9E /* TapMeasureTests.swift */; };
 		BCA369D72530E8EC000A5C9E /* TapMeasureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA369D62530E8EC000A5C9E /* TapMeasureUITests.swift */; };
@@ -35,12 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC0349A62535274D006F227A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA369B12530E8E8000A5C9E /* TapMeasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapMeasure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA369B42530E8E8000A5C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA369B62530E8E9000A5C9E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		BCA369B82530E8E9000A5C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCA369BB2530E8E9000A5C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCA369BD2530E8EC000A5C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA369C02530E8EC000A5C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCA369C22530E8EC000A5C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA369C72530E8EC000A5C9E /* TapMeasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapMeasureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,8 +102,8 @@
 				BCA369B42530E8E8000A5C9E /* AppDelegate.swift */,
 				BCA369B62530E8E9000A5C9E /* art.scnassets */,
 				BCA369B82530E8E9000A5C9E /* ViewController.swift */,
+				BC0349A62535274D006F227A /* Assets.xcassets */,
 				BCA369BA2530E8E9000A5C9E /* Main.storyboard */,
-				BCA369BD2530E8EC000A5C9E /* Assets.xcassets */,
 				BCA369BF2530E8EC000A5C9E /* LaunchScreen.storyboard */,
 				BCA369C22530E8EC000A5C9E /* Info.plist */,
 			);
@@ -234,7 +234,7 @@
 			files = (
 				BCA369B72530E8E9000A5C9E /* art.scnassets in Resources */,
 				BCA369C12530E8EC000A5C9E /* LaunchScreen.storyboard in Resources */,
-				BCA369BE2530E8EC000A5C9E /* Assets.xcassets in Resources */,
+				BC0349A72535274D006F227A /* Assets.xcassets in Resources */,
 				BCA369BC2530E8E9000A5C9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
