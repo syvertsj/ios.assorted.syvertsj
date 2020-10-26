@@ -7,12 +7,7 @@
 
 import Foundation
 
-protocol ApiResponseDelegate {
-    func getResponse()
-}
-
 // MARK: - Http Request class
-
 class RequestHandler {
     
     // MARK: - singleton option
