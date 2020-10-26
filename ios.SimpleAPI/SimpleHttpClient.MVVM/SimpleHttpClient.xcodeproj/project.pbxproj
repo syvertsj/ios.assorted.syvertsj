@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC5D2E81254722F90070E1D9 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D2E80254722F90070E1D9 /* Binder.swift */; };
+		BC5D2E89254723070070E1D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5D2E88254723070070E1D9 /* Message.swift */; };
 		BC9CD3782546126700DE06AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3772546126700DE06AE /* AppDelegate.swift */; };
 		BC9CD37A2546126700DE06AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3792546126700DE06AE /* SceneDelegate.swift */; };
 		BC9CD37C2546126700DE06AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD37B2546126700DE06AE /* ViewController.swift */; };
@@ -15,10 +17,8 @@
 		BC9CD3842546126B00DE06AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9CD3822546126B00DE06AE /* LaunchScreen.storyboard */; };
 		BC9CD38F2546126C00DE06AE /* SimpleHttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD38E2546126C00DE06AE /* SimpleHttpClientTests.swift */; };
 		BC9CD39A2546126C00DE06AE /* SimpleHttpClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3992546126C00DE06AE /* SimpleHttpClientUITests.swift */; };
-		BC9CD3B12546162D00DE06AE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3B02546162D00DE06AE /* Message.swift */; };
 		BC9CD3B62546180D00DE06AE /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3B52546180D00DE06AE /* RequestHandler.swift */; };
 		BC9CD3BF2546406600DE06AE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3BE2546406600DE06AE /* Response.swift */; };
-		BC9CD3C925464A8000DE06AE /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD3C825464A8000DE06AE /* Binder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC5D2E7F254722E20070E1D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = SimpleHttpClient/README.md; sourceTree = "<group>"; };
+		BC5D2E80254722F90070E1D9 /* Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
+		BC5D2E88254723070070E1D9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		BC9CD3742546126700DE06AE /* SimpleHttpClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHttpClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9CD3772546126700DE06AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC9CD3792546126700DE06AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,11 +56,8 @@
 		BC9CD3952546126C00DE06AE /* SimpleHttpClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleHttpClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9CD3992546126C00DE06AE /* SimpleHttpClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHttpClientUITests.swift; sourceTree = "<group>"; };
 		BC9CD39B2546126C00DE06AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC9CD3B02546162D00DE06AE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = SimpleHttpClient/Controller/Message.swift; sourceTree = SOURCE_ROOT; };
 		BC9CD3B52546180D00DE06AE /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
-		BC9CD3BD25463EE500DE06AE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = SimpleHttpClient/Controller/README.md; sourceTree = "<group>"; };
 		BC9CD3BE2546406600DE06AE /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		BC9CD3C825464A8000DE06AE /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Binder.swift; path = SimpleHttpClient/Binder.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 		BC9CD36B2546126700DE06AE = {
 			isa = PBXGroup;
 			children = (
-				BC9CD3BD25463EE500DE06AE /* README.md */,
+				BC5D2E7F254722E20070E1D9 /* README.md */,
 				BC9CD3762546126700DE06AE /* SimpleHttpClient */,
 				BC9CD38D2546126C00DE06AE /* SimpleHttpClientTests */,
 				BC9CD3982546126C00DE06AE /* SimpleHttpClientUITests */,
@@ -152,7 +152,7 @@
 		BC9CD3AC254615AE00DE06AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC9CD3B02546162D00DE06AE /* Message.swift */,
+				BC5D2E88254723070070E1D9 /* Message.swift */,
 				BC9CD3BE2546406600DE06AE /* Response.swift */,
 			);
 			path = Model;
@@ -169,7 +169,7 @@
 		BC9CD3C725464A6400DE06AE /* Binder */ = {
 			isa = PBXGroup;
 			children = (
-				BC9CD3C825464A8000DE06AE /* Binder.swift */,
+				BC5D2E80254722F90070E1D9 /* Binder.swift */,
 			);
 			path = Binder;
 			sourceTree = "<group>";
@@ -305,10 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9CD37C2546126700DE06AE /* ViewController.swift in Sources */,
-				BC9CD3C925464A8000DE06AE /* Binder.swift in Sources */,
 				BC9CD3B62546180D00DE06AE /* RequestHandler.swift in Sources */,
-				BC9CD3B12546162D00DE06AE /* Message.swift in Sources */,
+				BC5D2E81254722F90070E1D9 /* Binder.swift in Sources */,
 				BC9CD3782546126700DE06AE /* AppDelegate.swift in Sources */,
+				BC5D2E89254723070070E1D9 /* Message.swift in Sources */,
 				BC9CD3BF2546406600DE06AE /* Response.swift in Sources */,
 				BC9CD37A2546126700DE06AE /* SceneDelegate.swift in Sources */,
 			);
