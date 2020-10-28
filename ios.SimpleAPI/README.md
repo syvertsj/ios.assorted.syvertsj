@@ -14,14 +14,14 @@ install:
 
 package installations: 
     (download and install node .dmg package from nodejs.org)
-    _$ sudo npm install -g nodemon
+    $ sudo npm install -g nodemon
 
 initialize project: 
-    _$ npm init
-    _$ cd [project directory] && npm install express 
+    $ npm init
+    $ cd [project directory] && npm install express 
 
 run:
-    _$ nodemon app.js
+    $ nodemon app.js
 
 comments:
     - express module installation is scoped to project rather than system/global location
