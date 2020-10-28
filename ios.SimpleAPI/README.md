@@ -10,7 +10,7 @@
 node.js  : terminal javascript interpreter  \
 npm      : node package manager  \
 express  : node web framework  \ 
-nodemon  : node monitor (detects updates to server file and restarts automatically)  \
+nodemon  : node monitor (detects updates to server file and restarts automatically)  
 
 #### package installations:   
 (download and install node .dmg package from nodejs.org)   \
