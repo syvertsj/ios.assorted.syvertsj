@@ -7,10 +7,10 @@
 ## Node.js Server - SimpleNodeServer/app.js
 
 #### install: 
-node.js  -- terminal javascript interpreter  
-npm      -- node package manager  
-express  -- node web framework 
-nodemon  -- node monitor (detects updates to server file and restarts automatically)
+node.js  : terminal javascript interpreter  
+npm      : node package manager  
+express  : node web framework 
+nodemon  : node monitor (detects updates to server file and restarts automatically)
 
 #### package installations: 
 (download and install node .dmg package from nodejs.org)
@@ -24,6 +24,6 @@ $ cd [project directory] && npm install express
 $ nodemon app.js
 
 #### comments:
--- express module installation is scoped to project rather than system/global location
--- nodemon is a system installed application
--- npm init will generate package.json where the app name must match the server .js file
+express module installation is scoped to project rather than system/global location
+nodemon is a system installed application
+npm init will generate package.json where the app name must match the server .js file
